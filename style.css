@@ -26,6 +26,7 @@ table {border-collapse: collapse; border-spacing: 0;}
 body {
     background-color: #011627;
     color: #607B96;
+    position: relative;
 }
 header {
     margin: 0 auto;
@@ -47,7 +48,50 @@ nav{
 .nav__item.logo {
     padding-right: 150px;
 }
-.conttainer {
+.container {
     width: 60%;
     margin: 0 auto;
+}
+.my_info {
+    margin-top: 200px;
+}
+.my_name {
+    font-weight: 400;
+    font-size: 50px;
+}
+.my_stack {
+    font-weight: 450;
+    font-size: 25px;
+}
+.my_comments {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bg-circle {
+    height: 300px;
+    width: 120px;
+    background-color: #43D9AD;
+    filter: blur(120px);
+    display: block;
+    -webkit-filter: blur(100px);
+    position: absolute;
+    top: 160px;
+    right: 300px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+.bg-circle__blue {
+    background-color: #4D5BCE;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    top: 300px;
+    right: 150px;
 }
