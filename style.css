@@ -189,3 +189,7 @@ nav{
     bottom: 35px;
     right: 35px;
 }
+.snake__game-arrows {
+    margin: 0 auto;
+    width: 100%;
+}
