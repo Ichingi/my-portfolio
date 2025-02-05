@@ -23,16 +23,25 @@ blockquote:before, blockquote:after,
 q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse; border-spacing: 0;}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media(min-width:1400px) {
+    .container {
+        width: 65% !important;
+    }
+}
+a {
+    text-decoration: none;
+}
 body {
     background-color: #011627;
     color: #607B96;
+    position: relative;
 }
 header {
     margin: 0 auto;
     border: solid 1px #1E2D3D;
 }
 nav{
-    width: 98%;
+    width: 100%;
 }
 .nav__items {
     display: flex;
@@ -47,7 +56,140 @@ nav{
 .nav__item.logo {
     padding-right: 150px;
 }
-.conttainer {
-    width: 60%;
+.container {
+    width: 85%;
     margin: 0 auto;
+}
+.my__info {
+    display: flex;
+    align-items: center; /* Вирівнює елементи по вертикалі */
+    justify-content: space-between; /* Розтягує між собою */
+    margin-top: 200px;
+}
+
+.my__info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрує текст у своїй частині */
+    height: 100%; /* Зробить так, щоб блок зайняв всю висоту батьківського контейнера */
+}
+.my__name {
+    font-weight: 400;
+    font-size: 50px;
+}
+.my__stack {
+    font-weight: 450;
+    font-size: 25px;
+}
+.my__comments {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bg-circle {
+    height: 300px;
+    width: 120px;
+    background-color: #43D9AD;
+    filter: blur(120px);
+    display: block;
+    -webkit-filter: blur(100px);
+    position: absolute;
+    top: 160px;
+    right: 300px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    z-index: 2;
+}
+.bg-circle__blue {
+    background-color: #4D5BCE;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    top: 300px;
+    right: 150px;
+}
+.snake__game-box {
+    height: 425px;
+    width: 445px;
+    padding: 25px;
+    background-color: #175553;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: solid 1.5px black;
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+.snake__game-content {
+    height: 100%;
+    z-index: 4;
+}
+.snake__game-screen {
+    height: 100%;
+    width: 220px;
+    background-color: #011627;
+    display: block;
+    z-index: 4;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 1px 5px color(black);
+    position: relative;
+}
+.snake__game-button {
+    color: black;
+    background-color: #FEA55F;
+    padding: 10px 14px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position: absolute;
+    bottom: 55px;
+    left: 50px;
+}
+.snake__game-control {
+    width: 90%;
+}
+.snake__game-keyboard {
+    width: 90%;
+    padding: 10px;
+    height: 150px;
+    background-color: #011423;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.button__transparent {
+    padding: 10px 14px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: solid 2px white;
+    background-color: #ffffff00;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+}
+.snake__game-arrows {
+    margin: 0 auto;
+    width: 100%;
 }
