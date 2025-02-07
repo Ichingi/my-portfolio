@@ -218,5 +218,14 @@ footer {
 }
 .footer__item {
     border-right: solid 1.5px #1E2D3D;
+    padding: 16px 18px;
+}
+.footer__item-end {
+    display: flex;
+    justify-content: end;
+    border-left: solid 1.5px #1E2D3D;
     padding: 15px 18px;
+    position: absolute;
+    right: 0;
+    gap: 7px;
 }
