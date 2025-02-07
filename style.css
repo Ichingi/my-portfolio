@@ -38,7 +38,7 @@ body {
 }
 header {
     margin: 0 auto;
-    border: solid 1px #1E2D3D;
+    border: solid 1.5px #1E2D3D;
 }
 nav{
     width: 100%;
@@ -49,6 +49,14 @@ nav{
 .nav__item{
     border: solid 1px #1E2D3D;
     padding: 17px 31px;
+}
+.nav__item-end {
+    display: flex;
+    justify-content: end;
+    border: solid 1px #1E2D3D;
+    padding: 18px 31px;
+    position: absolute;
+    right: 0;
 }
 .nav__item.active {
     border-bottom: 2px solid #FEA55F;
