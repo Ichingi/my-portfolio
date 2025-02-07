@@ -218,7 +218,7 @@ footer {
 }
 .footer__item {
     border-right: solid 1.5px #1E2D3D;
-    padding: 15px 18px;
+    padding: 16px 18px;
 }
 .footer__item-end {
     display: flex;
