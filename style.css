@@ -202,6 +202,11 @@ nav{
     margin: 0 auto;
     width: 100%;
 }
+.snake__foodbar {
+    margin-top: 10px;
+    width: 80%;
+    gap: 7px;
+}
 .wrapper {
     position: relative;
     min-width: 100%;
