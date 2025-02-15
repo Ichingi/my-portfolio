@@ -27,6 +27,28 @@
                         <a>_contact-me</a>
                     </li>
                 </ul>
+                <div class="burger">
+                    <div class="burger-content">
+                        <li>timofey-purshega</li>
+                        <a href="#"><ion-icon name="menu" class="burger-button" id="burger-button" style="height: 30px; width: 30px;"></ion-icon></a>
+                    </div>
+                </div>
+                <div id="burger-menu" class="burger-menu">
+                    <div class="burger-menu__content">
+                        <li class="nav__item">
+                            <a>_hello</a>
+                        </li>
+                        <li class="nav__item">
+                            <a>_about-me</a>
+                        </li>
+                        <li class="nav__item">
+                            <a>_projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a>_contact-me</a>
+                        </li>
+                    </div>
+                </div>
             </nav>
         </header>
         <div class="container" style="padding-bottom: 300px;">
@@ -37,9 +59,9 @@
                     <p class="my__stack" style="color: #4D5BCE;">> Fullstack developer</p>
 
                     <div class="my__comments">
-                        <p style="color: #607B96;">// complete the game to continue</p>
+                        <p class="game-info" style="color: #607B96;">// complete the game to continue</p>
                         <p style="color: #607B96;">// you can also see it on my Github page</p>
-                        <p><span style="color: #4D5BCE;">const</span> <span style="color: #43D9AD;">githubLink</span> = <span style="color: #E99287;">“https://github.com/example/url”</span></p>
+                        <p class="github-info"><span style="color: #4D5BCE;">const</span> <span style="color: #43D9AD;">githubLink</span> = <span style="color: #E99287;">“https://github.com/example/url”</span></p>
                     </div>
                 </div>   
                 <div class="snake__game">
@@ -79,7 +101,6 @@
                                     <img src="images/food.svg" alt="Food">
                                     <img src="images/food.svg" alt="Food">
                                     <img src="images/food.svg" alt="Food">
-
                                 </div>
                             </div>
                             <a href="" class="button__transparent">skip</a>
@@ -97,11 +118,14 @@
                         <li class="footer__item">fide me in:</li>
                         <li class="footer__item"><a href=""><img src="images/twitter.svg" alt="Twitter"></a></li>
                         <li class="footer__item"><a href=""><img src="images/facebook.svg" alt="Facebook"></a></li>
-                        <li class="footer__item-end">@ichingi<a href=""><img src="images/github.svg" alt="Github"></a></li>
+                        <li class="footer__item-end"><span class="github-name">@ichingi</span><a href="https://github.com/Ichingi"><img src="images/github.svg" alt="Github"></a></li>
                     </ul>
                 </div>
             </footer>
         </div>
-    </div>        
+    </div>   
+    <script src="js/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" ></script> 
+    <script script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" ></script>     
 </body>
 </html>
