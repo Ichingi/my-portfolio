@@ -28,8 +28,77 @@ table {border-collapse: collapse; border-spacing: 0;}
         width: 65% !important;
     }
 }
+@media(max-width:1200px) {
+    .snake__game {
+        display: none !important;
+    }
+    
+    .container {
+        width: 70% !important;
+    }
+    .bg-circle {
+    filter: blur(180px) !important;
+    -webkit-filter: blur(180px) !important;
+    }
+    .game-info {
+        display: none;
+    }
+}
+@media(max-width:1000px) {
+    .nav__item{
+        padding: 13px 25px !important;
+    }
+    .nav__item-end {
+        padding: 14px 25px !important;
+    }
+}
+@media(max-width:870px) {
+    .bg-circle {
+        width: 220px !important;
+        height: 220px !important;
+        filter: blur(225px) !important;
+        -webkit-filter: blur(225px) !important;
+    }
+    .my__info {
+        margin-top: 100px !important;
+    }
+}
+@media(max-width:820px) {
+    .nav__items {
+        display: none !important;
+    }
+    .burger-content {
+        display: flex !important;
+    }
+    .burger-button {
+        display: flex !important;
+    }
+    .burger {
+        display: flex !important;
+    }
+}
+@media(max-width:690px) {
+    .container{
+        width: 90% !important;
+    }
+    .my__stack {
+        font-size: 20px !important;
+    }
+    .github-info {
+        font-weight: 500 !important;
+        font-size: 14px !important;
+    }
+}
+@media(max-width:400px) {
+    .github-name {
+        display: none !important;
+    }
+}
 a {
     text-decoration: none;
+}
+li {
+    list-style-type: none;
 }
 body {
     background-color: #011627;
@@ -70,16 +139,16 @@ nav{
 }
 .my__info {
     display: flex;
-    align-items: center; /* Вирівнює елементи по вертикалі */
-    justify-content: space-between; /* Розтягує між собою */
+    align-items: center;
+    justify-content: space-between;
     margin-top: 200px;
 }
 
 .my__info-content {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Центрує текст у своїй частині */
-    height: 100%; /* Зробить так, щоб блок зайняв всю висоту батьківського контейнера */
+    justify-content: center;
+    height: 100%;
 }
 .my__name {
     font-weight: 400;
@@ -261,4 +330,42 @@ footer {
     justify-content: center;
     font-size: 20px;
     border-radius: 5px;
+}
+.burger-menu {
+    display: none;
+}
+.burger-button {
+    display: none;
+    color: #607B96;
+}
+.burger {
+    padding: 10px;
+    display: none;
+    background-color: #011627;
+}
+.burger-content {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+.burger-menu__active {
+    display: block;
+    height: 100%;
+    background-color: #43D9AD;
+    z-index: 4;
+    position: fixed;
+}
+.burger-menu__content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #011627;
+    z-index: 5;
+}
+.burger-menu__content li {
+    color: #FFFFFF;
+    padding: 18px 25px !important;
 }
